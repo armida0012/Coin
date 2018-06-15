@@ -10,7 +10,7 @@ import RealmSwift
 
 class Quotes : Object {
     dynamic var key: String = NSUUID().uuidString
-    dynamic var quotesSymbol : String = ""
+    dynamic var symbol : String = ""
     dynamic var price : NSNumber = NSNumber.init(value: 0.0)
     
     dynamic var percent_change_1h : NSNumber = NSNumber.init(value: 0.0)

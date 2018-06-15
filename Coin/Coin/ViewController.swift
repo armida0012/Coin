@@ -56,7 +56,7 @@ class ViewController: UITableViewController {
         let coin:Coin = self.coinsArray[indexPath.row]
         cell.textLabel?.text = coin.symbol
         let quotes:Quotes = coin.quotes.first as Quotes!
-        cell.detailTextLabel?.text = String(format: "%05.6f", quotes.price.floatValue) + " " + quotes.quotesSymbol
+        cell.detailTextLabel?.text = String(format: "%05.6f", quotes.price.floatValue) + " " + quotes.symbol
         cell.isUserInteractionEnabled = true
         
         return cell

@@ -26,6 +26,7 @@ class DataBaseManager {
     }
     
     func writeCoinList(coinList: Array<Coin>) {
+        //здесь правильнее организовать запись в БД в фоновом потоке, но пока не успела разобраться как это делается правильно в Realm
         for item in coinList {
             try! self.realm.write({
                 self.realm.add(item, update: true)

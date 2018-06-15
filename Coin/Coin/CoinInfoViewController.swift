@@ -35,7 +35,7 @@ class CoinInfoViewController: UITableViewController {
             break;
         case 1:
             cell.textLabel?.text = "Price"
-            cell.detailTextLabel?.text = String(format: "%05.6f", quotes.price.floatValue) + " " + quotes.quotesSymbol
+            cell.detailTextLabel?.text = String(format: "%05.6f", quotes.price.floatValue) + " " + quotes.symbol
             break;
         case 2:
             cell.textLabel?.text = "Circulating supply"
@@ -53,7 +53,7 @@ class CoinInfoViewController: UITableViewController {
             break;
         case 4:
             cell.textLabel?.text = "Market cap"
-            cell.detailTextLabel?.text = quotes.market_cap.stringValue + " " + quotes.quotesSymbol
+            cell.detailTextLabel?.text = quotes.market_cap.stringValue + " " + quotes.symbol
             break;
         case 5:
             cell.textLabel?.text = "Change by 1 hour"
@@ -69,7 +69,7 @@ class CoinInfoViewController: UITableViewController {
             break;
         case 8:
             cell.textLabel?.text = "Volume(24h)"
-            cell.detailTextLabel?.text = quotes.volume_24h.stringValue + " " + quotes.quotesSymbol
+            cell.detailTextLabel?.text = quotes.volume_24h.stringValue + " " + quotes.symbol
             break;
         default:
             break;
